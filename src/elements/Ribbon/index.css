@@ -1,0 +1,65 @@
+.ribbon {
+  position: relative;
+  margin: 0 auto 10px;
+  padding: 5px 20px;
+  text-align: center;
+  z-index: 2;
+  color: white;
+}
+
+.ribbon.blue {
+  @apply text-xs bg-blue-700;
+}
+
+.ribbon.blue::before,
+.ribbon.blue::after {
+  @apply bg-blue-700;
+}
+
+.ribbon.orange {
+  @apply text-xs bg-orange-700;
+}
+
+.ribbon.orange::before,
+.ribbon.orange::after {
+  @apply bg-orange-700;
+}
+
+.ribbon.pink {
+  @apply text-xs bg-pink-700;
+}
+
+.ribbon.pink::before,
+.ribbon.pink::after {
+  @apply bg-pink-700;
+}
+
+.ribbon::before,
+.ribbon::after {
+  content: '';
+  width: 30px;
+  height: 25px;
+
+  /* position ribbon ends behind and slightly lower */
+  position: absolute;
+  z-index: 0;
+  top: 10px;
+
+  /* clip ribbon end shape */
+  clippath: polygon(0 0, 100% 0, 100% 100%, 0 100%, 25% 50%);
+
+  /* draw and position the folded ribbon bit */
+  background-image: linear-gradient(45deg, transparent 50%, #333 50%);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.ribbon::before {
+  left: -25px;
+}
+
+.ribbon::after {
+  right: -25px;
+  transform: scaleX(-1);
+}

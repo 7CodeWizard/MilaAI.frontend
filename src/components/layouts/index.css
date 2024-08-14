@@ -1,0 +1,11 @@
+@supports (-webkit-touch-callout: none) {
+  .page-container {
+    height: -webkit-fill-available;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .page-container {
+    height: 100vh;
+  }
+}

@@ -1,0 +1,17 @@
+.bot-message {
+  border-radius: 16px;
+  @apply bg-indigo-50 text-indigo-800 px-3 py-2 font-medium text-sm w-fit max-w-[80%] relative;
+}
+
+.user-message {
+  border-radius: 16px;
+  cursor: pointer;
+
+  @apply bg-indigo-50 px-3 py-2 font-medium text-sm w-fit text-indigo-800;
+}
+
+.user-selected {
+  cursor: pointer;
+
+  @apply bg-indigo-500 px-3 py-2 font-medium text-sm w-fit text-white rounded-full;
+}

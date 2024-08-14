@@ -1,0 +1,33 @@
+.mila-range {
+  -webkit-appearance: none;
+  border-radius: 16px;
+  background-color: #ccc;
+}
+
+.mila-range::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 16px;
+}
+
+.mila-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(-7px);
+  @apply bg-gray-50;
+}
+
+.mila-range.orange::-webkit-slider-thumb {
+  border: 1.5px solid #fb923c;
+}
+
+.mila-range.pink::-webkit-slider-thumb {
+  border: 1.5px solid #ec4899;
+}
+
+.mila-range.blue::-webkit-slider-thumb {
+  border: 1.5px solid #2563eb;
+}

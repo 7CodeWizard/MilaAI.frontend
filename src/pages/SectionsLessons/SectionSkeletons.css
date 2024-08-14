@@ -1,0 +1,50 @@
+.skeleton-container {  
+  display: flex;  
+  flex-direction: column;  
+  gap: 20px;  
+}  
+  
+.skeleton-section {  
+  background: #f0f0f0;  
+  padding: 20px;  
+  border-radius: 10px;  
+}  
+  
+.skeleton-title {  
+  width: 50%;  
+  height: 20px;  
+  background: #e0e0e0;  
+  margin-bottom: 10px;  
+  border-radius: 5px;  
+}  
+  
+.skeleton-lessons-grid {  
+  display: grid;  
+  gap: 20px;  
+}  
+  
+.skeleton-lesson-card {  
+  background: #fff;  
+  border: 1px solid #e0e0e0;  
+  border-radius: 10px;  
+  padding: 20px;  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;  
+}  
+  
+.skeleton-lesson-icon {  
+  width: 40px;  
+  height: 40px;  
+}  
+  
+.skeleton-lesson-name,  
+.skeleton-lesson-topic {  
+  background: #e0e0e0;  
+  border-radius: 5px;  
+}  
+  
+.skeleton-start-button {  
+  background: #e0e0e0;  
+  border-radius: 5px;  
+}  
